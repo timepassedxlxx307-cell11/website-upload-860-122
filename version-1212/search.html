@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片搜索-高清国产影片免费在线 - 最新热播影视推荐-追剧网站</title>
+    <meta name="description" content="搜索高清国产影片、电影、电视剧与热门影视推荐，支持按分类和年份筛选。">
+    <meta name="keywords" content="高清国产影片免费在线 - 最新热播影视推荐-追剧网站,国产,视频,免费,在线观看,高清,影视大全,搜索,筛选">
+    <link rel="stylesheet" href="./assets/vendor.css">
+    <link rel="stylesheet" href="./assets/site.css">
+    
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="./index.html" aria-label="高清国产影片">
+            <span class="logo-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.14v14l11-7z"/></svg></span>
+            <span>高清国产影片</span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+            <a href="./index.html">首页</a>
+            <a href="./categories.html">分类</a>
+            <a href="./ranking.html">排行榜</a>
+            <a href="./category-action-crime.html">动作犯罪</a><a href="./category-scifi-fantasy.html">科幻奇幻</a><a href="./category-romance-youth.html">爱情青春</a><a href="./category-suspense-thriller.html">悬疑惊悚</a>
+        </nav>
+        <form class="header-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影视作品..." aria-label="搜索影视作品">
+            <button class="search-button" type="submit" aria-label="搜索"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m21 21-4.3-4.3M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Z"/></svg></button>
+        </form>
+        <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="打开导航"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="container mobile-nav" data-mobile-nav>
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类总览</a>
+        <a href="./ranking.html">排行榜</a>
+        <a href="./category-action-crime.html">动作犯罪</a><a href="./category-scifi-fantasy.html">科幻奇幻</a><a href="./category-romance-youth.html">爱情青春</a><a href="./category-suspense-thriller.html">悬疑惊悚</a><a href="./category-comedy-family.html">喜剧家庭</a><a href="./category-war-history.html">战争历史</a><a href="./category-urban-drama.html">都市剧情</a><a href="./category-variety-documentary.html">综艺纪实</a>
+        <form class="header-search-mobile" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影视作品..." aria-label="搜索影视作品">
+        </form>
+    </div>
+</header>
+
+<main data-search-page>
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="./index.html">首页</a><span>›</span><span>搜索</span></div>
+            <h1>影片搜索</h1>
+            <p>输入片名、题材、标签、地区或年份，即可筛选高清影视内容。</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="search-panel">
+                <input type="search" data-search-keyword placeholder="输入关键词搜索影片" aria-label="搜索关键词">
+                <select data-search-category aria-label="选择分类">
+                    <option value="">全部分类</option>
+                    <option value="动作犯罪">动作犯罪</option><option value="科幻奇幻">科幻奇幻</option><option value="爱情青春">爱情青春</option><option value="悬疑惊悚">悬疑惊悚</option><option value="喜剧家庭">喜剧家庭</option><option value="战争历史">战争历史</option><option value="都市剧情">都市剧情</option><option value="综艺纪实">综艺纪实</option>
+                </select>
+                <select data-search-year aria-label="选择年份">
+                    <option value="">全部年份</option>
+                    <option value="2029">2029</option><option value="2028">2028</option><option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option>
+                </select>
+            </div>
+            <p class="search-results-note" data-search-note></p>
+            <div class="movie-grid" data-search-results></div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <section>
+            <h2>高清国产影片</h2>
+            <p>提供高清国产影片免费在线观看，每日更新最新热播影视推荐，内容涵盖电影、电视剧等多种类型，是发现国产好片的理想平台。</p>
+        </section>
+        <section>
+            <h3>影视分类</h3>
+            <div class="footer-links">
+                <a href="./category-action-crime.html">动作犯罪</a><a href="./category-scifi-fantasy.html">科幻奇幻</a><a href="./category-romance-youth.html">爱情青春</a><a href="./category-suspense-thriller.html">悬疑惊悚</a><a href="./category-comedy-family.html">喜剧家庭</a><a href="./category-war-history.html">战争历史</a><a href="./category-urban-drama.html">都市剧情</a><a href="./category-variety-documentary.html">综艺纪实</a>
+            </div>
+        </section>
+        <section>
+            <h3>热门入口</h3>
+            <div class="footer-links">
+                <a href="./ranking.html">热播排行榜</a>
+                <a href="./categories.html">全部分类</a>
+                <a href="./search.html">影片搜索</a>
+            </div>
+        </section>
+    </div>
+</footer>
+<script src="./assets/site.js"></script>
+<script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
